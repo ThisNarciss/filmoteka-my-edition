@@ -1,0 +1,80 @@
+.header {
+  background-image: url('../images/abstract-background-with-red-lines-desktop-1@1x.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1280px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 30px;
+  line-height: 0.86;
+  text-align: center;
+}
+
+.header-container {
+  height: 216px;
+  padding-top: 40px;
+  padding-bottom: 80px;
+  //   text-align: center;
+}
+
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 40px;
+}
+
+.site-nav_list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.site-nav_link {
+  position: relative;
+  text-transform: uppercase;
+}
+
+.current-page::after {
+  content: ' ';
+  position: absolute;
+  bottom: -3;
+  left: 0;
+  background-color: #ff001b;
+  width: 100%;
+  height: 3px;
+}
+
+.search-form {
+  position: relative;
+  width: 394px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-form_input {
+  width: 100%;
+
+  background-color: rgba($color: #000000, $alpha: 0);
+  border: none;
+  color: var(--default-bgc);
+  border-bottom: 0.5px solid var(--default-bgc);
+
+  &::placeholder {
+    color: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 0.88;
+  }
+}
+
+.search-form_button {
+  position: absolute;
+  right: 0;
+  bottom: 6px;
+}
